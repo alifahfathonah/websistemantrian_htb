@@ -1,0 +1,64 @@
+/* MENU ISI SLIDESHOW CSS */
+#slidercontainer {
+	position: relative;
+	overflow: hidden;}
+#slidercontainer {
+	width: 824px;
+	height: 341px;}
+#css3slider img {
+	width: 824px;
+	height: 341px;}
+#css3slider {
+  -webkit-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -moz-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -ms-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  }
+
+/* MENU ANIMASI SLIDESHOW CSS */
+@-webkit-keyframes slider {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-moz-keyframes slider {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-o-keyframes slider {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes slider {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* MENU PAUSE SLIDESHOW CSS */
+#css3slider:hover {
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused; }
+}
+#slidercontainer:after {
+  content: "";
+  font-size: 150px;
+  position: absolute;
+  z-index: 12;
+  color: rgba(255,255,255, 0);
+  left: 300px; top: 80px;
+  -webkit-transition: 1s all ease-in-out;
+  -ms-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+#slidercontainer:hover:after {color: rgba(255,255,255, 0.6);}
